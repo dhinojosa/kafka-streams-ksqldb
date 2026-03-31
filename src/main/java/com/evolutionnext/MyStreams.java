@@ -20,6 +20,7 @@ import static org.apache.kafka.streams.errors.StreamsUncaughtExceptionHandler.St
 public class MyStreams {
     public static void main(String[] args) {
         Properties props = new Properties();
+        //ENSURE THAT THIS DOESN"T HAVE THE SAME NAME AS OTHER CONSUMERS
         props.put(StreamsConfig.APPLICATION_ID_CONFIG,
             "my_streams_app");
         props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG,
